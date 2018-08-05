@@ -1,14 +1,8 @@
 package com.org.animal.bird;
 
 import com.org.animal.Animal;
+import com.org.animal.behaviour.SoundBehaviour;
 
-public class Bird extends Animal{
-
-	public void sing() {
-		System.out.println("I am singing");
-	}
-
-	public void fly() {
-		System.out.println("I am flying");		
-	}
+public abstract class Bird extends Animal implements SoundBehaviour{
+	//incorporate common behaviour of birds
 }
