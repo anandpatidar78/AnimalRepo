@@ -3,7 +3,8 @@ package com.org.animal.util;
 public enum AnimalSound {
 	
 	CHICKEN_SOUND ("Cluck, cluck"),
-	DUCK_SOUND ("Quack, quack");
+	DUCK_SOUND ("Quack, quack"),
+	ROOSTER_SOUND ("Cock-a-doodle-doo");
 	
     String sound;
     
@@ -13,5 +14,5 @@ public enum AnimalSound {
     
     public String makeSound() {
     	return sound;
-    }    
+    }
 }
