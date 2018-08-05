@@ -12,7 +12,9 @@ public class AnimalProducer {
          return new FishFactory();
       } else if(animalType.equals(AnimalType.SEA_ANIMAL)){
              return new SeaAnimalFactory();
-          }      
+      } else if(animalType.equals(AnimalType.INSECT)){
+          return new InsectFactory();
+      }      
       return null;
    }
 }

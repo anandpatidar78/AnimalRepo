@@ -2,11 +2,9 @@ package com.org.animal.animal.factory;
 
 import com.org.animal.AnimalType;
 import com.org.animal.bird.Bird;
-import com.org.animal.bird.Chicken;
-import com.org.animal.bird.Duck;
-import com.org.animal.bird.Parrot;
-import com.org.animal.bird.Rooster;
 import com.org.animal.bird.type.BirdType;
+import com.org.animal.insect.Insect;
+import com.org.animal.insect.type.InsectType;
 import com.org.animal.sea.Dolphin;
 import com.org.animal.sea.Fish;
 import com.org.animal.sea.SeaAnimal;
@@ -32,4 +30,9 @@ public class SeaAnimalFactory extends AbstractFactoryAnimal {
 	public Fish getFish(FishType fishType)	{
 		return null;
 	}
+		
+	@Override
+	public Insect getInsect(InsectType insectType) {
+		return null;
+	}	
 }

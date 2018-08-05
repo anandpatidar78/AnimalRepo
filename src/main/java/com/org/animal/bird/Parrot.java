@@ -1,11 +1,12 @@
 package com.org.animal.bird;
 
 import com.org.animal.behaviour.FlyingBehaviour;
+import com.org.animal.behaviour.SingingdBehaviour;
 import com.org.animal.behaviour.SoundBehaviour;
 import com.org.animal.util.AnimalSound;
 import com.org.animal.util.ParrotNeighbour;
 
-public class Parrot extends Bird implements SoundBehaviour, FlyingBehaviour {
+public class Parrot extends Bird implements SoundBehaviour, SingingdBehaviour, FlyingBehaviour {
 	private ParrotNeighbour neighbour;
 
 	public void setNeighbour(ParrotNeighbour neighbour) {
@@ -21,8 +22,10 @@ public class Parrot extends Bird implements SoundBehaviour, FlyingBehaviour {
 		
 		return neighbour.makeSound();
 	}
-	
+	public void sing() {
+		System.out.println("I am singer");
+	}
 	public void fly() {
 		System.out.println("I am flying");
-	}	
+	}
 }

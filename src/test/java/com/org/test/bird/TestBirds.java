@@ -55,13 +55,15 @@ public class TestBirds {
 		assertEquals(parrot.sound(), AnimalSound.PHONE_RING_SOUND.makeSound());
 	}	
 
+	@Test
 	public void testFlyingBehaviour() {		
 		assertFalse(chicken instanceof FlyingBehaviour);
 		assertFalse(rooster instanceof FlyingBehaviour);
 		assertFalse(duck instanceof FlyingBehaviour);
-		assertFalse(parrot instanceof FlyingBehaviour);
+		assertTrue(parrot instanceof FlyingBehaviour);
 	}	
 
+	@Test
 	public void testSwimBehaviour() {
 		assertTrue(duck instanceof SwimBehaviour);
 		assertFalse(chicken instanceof SwimBehaviour);

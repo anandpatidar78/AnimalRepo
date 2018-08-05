@@ -8,7 +8,8 @@ public enum AnimalSound {
 	PARROT_SOUND ("Chirp"),
 	PHONE_RING_SOUND ("Tring, tring"),
 	DOG_SOUND("Woof, woof"),
-	CAT_SOUND ("Meow");
+	CAT_SOUND ("Meow"),
+	NO_SOUND ("NO Sound");
 	
     String sound;
     

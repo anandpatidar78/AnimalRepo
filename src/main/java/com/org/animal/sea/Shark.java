@@ -13,8 +13,4 @@ public class Shark extends Fish {
 	public void swim() {
 		System.out.println("I am swiming.");
 	}
-	
-	public void eat() {
-		System.out.println("I eat fish.");
-	}
 }

@@ -16,7 +16,7 @@ public class Fish extends SeaAnimal implements SwimBehaviour, EatBehaviour {
 	public String getSize() {
 		return size.size();
 	}	
-	
+
 	public void eat() {
 		System.out.println("I eat........");
 	}	

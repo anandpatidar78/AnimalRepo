@@ -1,5 +1,5 @@
 package com.org.animal;
 
 public enum AnimalType {
-	BIRD, FISH, SEA_ANIMAL, DOLPHIN;	
+	BIRD, FISH, SEA_ANIMAL, DOLPHIN, INSECT;	
 }

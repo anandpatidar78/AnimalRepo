@@ -7,6 +7,8 @@ import com.org.animal.bird.Duck;
 import com.org.animal.bird.Parrot;
 import com.org.animal.bird.Rooster;
 import com.org.animal.bird.type.BirdType;
+import com.org.animal.insect.Insect;
+import com.org.animal.insect.type.InsectType;
 import com.org.animal.sea.Fish;
 import com.org.animal.sea.SeaAnimal;
 import com.org.animal.sea.type.FishType;
@@ -40,6 +42,11 @@ public class BirdFactory extends AbstractFactoryAnimal {
 
 	@Override
 	public SeaAnimal getSeaAnimal(AnimalType animalType) {
+		return null;
+	}
+	
+	@Override
+	public Insect getInsect(InsectType insectType) {
 		return null;
 	}
 }
