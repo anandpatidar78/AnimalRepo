@@ -1,4 +1,4 @@
-package com.org.animal.animal.factory;
+package com.org.animal.factory;
 
 import com.org.animal.AnimalType;
 
