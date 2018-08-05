@@ -53,22 +53,19 @@ public class TestBirds {
 
 		parrot.setNeighbour(ParrotNeighbour.PHONE);
 		assertEquals(parrot.sound(), AnimalSound.PHONE_RING_SOUND.makeSound());
-		
 	}	
 
-	@Test
 	public void testFlyingBehaviour() {		
 		assertFalse(chicken instanceof FlyingBehaviour);
 		assertFalse(rooster instanceof FlyingBehaviour);
 		assertFalse(duck instanceof FlyingBehaviour);
-		assertTrue(parrot instanceof FlyingBehaviour);
+		assertFalse(parrot instanceof FlyingBehaviour);
 	}	
 
-	@Test
 	public void testSwimBehaviour() {
 		assertTrue(duck instanceof SwimBehaviour);
 		assertFalse(chicken instanceof SwimBehaviour);
 		assertFalse(rooster instanceof SwimBehaviour);
 		assertFalse(parrot instanceof SwimBehaviour);
-	}	
+	}
 }

@@ -15,12 +15,14 @@ public class Parrot extends Bird implements SoundBehaviour, FlyingBehaviour {
 		return neighbour;
 	}
 
-	public String sound() {		
+	public String sound() {
+		
 		if(null == neighbour) return AnimalSound.PARROT_SOUND.makeSound();
+		
 		return neighbour.makeSound();
 	}
 	
 	public void fly() {
 		System.out.println("I am flying");
-	}
+	}	
 }
